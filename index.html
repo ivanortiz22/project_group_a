@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Proyecto Grupo A</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:0px;margin-top:3px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> Proyecto estación meteorológica</b></h5>
+  </header>
+
+  <img src="images/weather-station-banner.jpg" class="w3-round-small" alt="Weather" style="width:80%; max-height:10%; padding-left:15px;">
+
+
+
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 25px;
+          column-gap: 15px;
+          /*height: 300px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        div.a {
+        text-indent: 15px;
+        }
+
+        </style>
+        
+        </head>
+        <body>
+            
+            
+            
+            <div class="a">
+            <h2>Proyecto estación meteorológica</h2>
+            <p>Datos meteorológicos recolectados en tres locaciones distintas.</p>
+            </div>
+                
+        
+
+                <div class="row">
+                    <div class="column" style="background-color:#aaa;">
+                    <h2>Estación 1</h2>
+                    <h4>Temperatura</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518270"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h2>Estación 2</h2>
+                    <h4>Temperatura</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518270"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h2>Estación 3</h2>
+                    <h4>Temperatura</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518270"></iframe>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Humedad</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518271"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Humedad</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518271"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Humedad</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518271"></iframe>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Temperatura histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Estaci%C3%B3n+meteorol%C3%B3gica+1&type=line&xaxis=Tiempo&yaxismax=45&yaxismin=0"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Temperatura histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Estaci%C3%B3n+meteorol%C3%B3gica+1&type=line&xaxis=Tiempo&yaxismax=45&yaxismin=0"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Temperatura histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Estaci%C3%B3n+meteorol%C3%B3gica+1&type=line&xaxis=Tiempo&yaxismax=45&yaxismin=0"></iframe>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Humedad histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Estaci%C3%B3n+meteorol%C3%B3gica+1&type=line&xaxis=Tiempo&yaxismax=100&yaxismin=0"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Humedad histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Estaci%C3%B3n+meteorol%C3%B3gica+1&type=line&xaxis=Tiempo&yaxismax=100&yaxismin=0"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Humedad histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&timescale=10&title=Estaci%C3%B3n+meteorol%C3%B3gica+1&type=line&xaxis=Tiempo&yaxismax=100&yaxismin=0"></iframe>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Ubicación</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/maps/channel_show"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Ubicación</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/maps/channel_show"></iframe>
+                    </div>
+                    
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Ubicación</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/maps/channel_show"></iframe>
+                    </div>
+                </div>
+
+    </body>
+    </html>
+        
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>Enlaces de interés</h4>
+    <p>Enlace al <a href="https://www.google.com" target="_blank">código</a> utilizado</p>
+  </footer>
+
+  <div class="w3-container w3-padding-16 w3-light-grey">
+    <h4>About Us Page</h4>
+    <p>Some text about who we are and what we do.</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+
+  <!-- End page content -->
+</div>
+
+
+</body>
+</html>
