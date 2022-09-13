@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Proyecto Grupo A</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- !Contenido de la página -->
+<div class="w3-main" style="margin-left:0px;margin-top:3px;">
+
+  <!-- Cabecera o Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i> Proyecto estación meteorológica</b></h5>
+  </header>
+
+  <img src="images/weather-station-banner.jpg" class="w3-round-small" alt="Weather" style="width:80%; max-height:10%; padding-left:15px;">
+
+
+
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Crea 3 columnas iguales que flotan una al lado de la otra */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 25px;
+          column-gap: 15px;
+          
+        }
+        
+        /* Borra floats después de la columna */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        div.a {
+        text-indent: 15px;
+        }
+
+        </style>
+        
+        </head>
+        <body>
+            
+            
+            
+            <div class="a">
+            <h2>Proyecto estación meteorológica</h2>
+            <p>Visualización de los datos meteorológicos recolectados por tres nodos en locaciones distintas. Se utilizó la plataforma IoT NodeMCU y la API de ThingSpeak para el logging y análisis de datos.</p>
+            </div>
+                
+        
+
+                <div class="row"> <!-- Fila para los widgets de temperatura -->
+                    <div class="column" style="background-color:#aaa;">
+                    <h2>Estación 1</h2>
+                    <h4>Temperatura</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518270"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h2>Estación 2</h2>
+                    <h4>Temperatura</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854999/widgets/518839"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h2>Estación 3</h2>
+                    <h4>Temperatura</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1855041/widgets/518838"></iframe>
+                  </div>
+                </div>
+
+                <div class="row"> <!-- Fila para los widgets de humedad -->
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Humedad</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/widgets/518271"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Humedad</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854999/widgets/518841"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Humedad</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1855041/widgets/518840"></iframe>
+                  </div>
+                </div>
+                
+                <div class="row"> <!-- Fila para los widgets de datos de temperatura histórica -->
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Temperatura histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&yaxismax=45&yaxismin=0"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Temperatura histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854999/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Temperatura histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1855041/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                  </div>
+                </div>
+
+                <div class="row"> <!-- Fila para los widgets de datos de humedad históricos -->
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Humedad histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&yaxismax=100&yaxismin=0"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Humedad histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854999/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Humedad histórica</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1855041/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                  </div>
+                </div>
+
+                <div class="row"> <!-- Fila para los widgets de ubicación geográfica -->
+                    <div class="column" style="background-color:#aaa;">
+                    <h4>Ubicación</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854321/maps/channel_show"></iframe>
+                    </div>
+
+                    <div class="column" style="background-color:#bbb;">
+                    <h4>Ubicación</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1854999/maps/channel_show"></iframe>
+                    </div>
+                    
+                    <div class="column" style="background-color:#ccc;">
+                    <h4>Ubicación</h4>
+                    <iframe width="450" height="260" style="border: 1px solid #000000;" src="https://thingspeak.com/channels/1855041/maps/channel_show"></iframe>
+                  </div>
+                </div>
+
+    </body>
+    </html>
+        
+
+  <!-- Pie de página o footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>Enlaces de interés</h4>
+    <p>Enlace al <a href="https://raw.githubusercontent.com/ivanortiz22/project_group_a/main/C%C3%B3digo/codigo_sensor_medioambiental.ino" target="_blank">código</a> utilizado en el microcontrolador.</p>
+    <p>Enlace al <a href="https://raw.githubusercontent.com/ivanortiz22/project_group_a/main/index.html" target="_blank">código</a> utilizado por la página web.</p>
+  </footer>
+
+
+  <!-- Fin de la página -->
+</div>
+
+
+</body>
+</html>
